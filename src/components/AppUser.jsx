@@ -165,7 +165,7 @@ function AppUser() {
         <div>
           <p className="eyebrow">Administration</p>
           <h1>User management</h1>
-          <p className="sidebar-copy">Manage your application users from one place.</p>
+          <p className="sidebar-copy">Manage your application users from one place!</p>
         </div>
         <nav className="app-user-menu">
           {sections.map((section) => (
