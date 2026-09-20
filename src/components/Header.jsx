@@ -7,7 +7,7 @@ function Header({ user, onLogout }) {
       <nav className="nav-links" aria-label="Main navigation">
         <Link to="/">Home</Link>
         {user && <Link to="/data">User List</Link>}
-        {user && <Link to="/app-user">AppUser</Link>}
+        {user && <Link to="/app-user">App-User</Link>}
         {user ? (
           <>
             <span className="user-name">Hi, {user.username}</span>
