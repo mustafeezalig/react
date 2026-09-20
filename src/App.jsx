@@ -7,8 +7,6 @@ import Home from './components/Home.jsx'
 import Login from './components/Login.jsx'
 import SignUp from './components/SignUp.jsx'
 import UserData from './components/UserData.jsx'
-import './App.css'
-
 function App() {
   const [user, setUser] = useState(null)
 
@@ -32,9 +30,9 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
+    <div className="grid min-h-screen grid-rows-[auto_1fr_auto] bg-[#f7f3ed]">
       <Header user={user} onLogout={handleLogout} />
-      <main className="main-content">
+      <main className="grid min-w-0 content-start">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login onLogin={setUser} />} />
